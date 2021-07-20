@@ -83,7 +83,7 @@ function getLastCharacter(str) {
 
 function getLastWordInPlaceName(place) {
   const fullPlace = place;
-  const index = place.indexOf(" ")
+  const index = place.indexOf(" ");
   let newPlace = fullPlace.substring(index + 1);
 
   return newPlace;
@@ -116,6 +116,7 @@ function replaceLastName(fullName, newLastName) {
 function capitalizeLastName(fullName) {
   let capitalizeLastName = fullName.substring(0,5) + fullName[5].toUpperCase() + fullName.substring(6);
   return capitalizeLastName;
+  console.llog("justice");
 }
 
 /**

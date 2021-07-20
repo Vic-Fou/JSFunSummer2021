@@ -9,11 +9,9 @@ function compareEquality(a, b) {
   if (a === b) {
     return "Equal";
   }
-  else {
-    return "Not Equal";
-  }
+  return "Not Equal";
 }
-console.log(compareEquality(50,50));
+
 /** The function should use the strict inequality operator
  *   3 !== 3; // false
  *   3 !== '3'; // true
@@ -35,7 +33,6 @@ function testStrictNotEqual(a, b) {
   }
   return "Equal";
 }
-console.log(testStrictNotEqual(50,5));
 
 /**
  * Given a number "age", return whether or not someone is a teenager
@@ -43,23 +40,15 @@ console.log(testStrictNotEqual(50,5));
  * Use the logical && operator
  */
 function isTeenager(age) {
-  if (age >= 13 && age <= 19){
-    console.log("teenager");
-    return true; // Return something here
+  // Method 1
+  if (age >= 13 && age <= 19) {
+    return true;
   }
-  else if (age > 19){
-    console.log("Not a Teenager(An Adult");
-    return false ;
-  } 
-  else if (age < 13){
-    console.log("Not a teenager(A Child");
-    return false ;
-  }
-  else {
-    return "error troubling finding your age group";
-  }
+  return false;
+
+  // Method 2
+  return age >= 13 && age <= 19;
 }
-console.log(isTeenager(17));
 
 /**
  * "stringOrNumber" should be true if stringOrNumber is:
@@ -69,32 +58,41 @@ console.log(isTeenager(17));
  * Hint: See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/isNaN
  */
 function isNumeric(stringOrNumber) {
-  if (Number.isNaN(stringOrNumber) || stringOrNumber) {
+  // Method 1
+  if (typeof stringOrNumber === "number" || isNaN(stringOrNumber) !== true) {
     return true;
   }
-  else if (isNaN === isNaN ){
-    return false;
-  }
-  else {
-    return false;
-  }
-  // Return something here
+  return false;
+
+  // Method 2
+  return typeof stringOrNumber === "number" || isNaN(stringOrNumber) !== true;
 }
-console.log(isNumeric("5"));
+
 /***
  *  Using conditional logic compare both arguments and return the largest argument
  */
 
 function getLargerNumber(arg1, arg2) {
   let largestNumber;
-
+  if (arg1 > arg2) {
+    largestNumber = arg1;
+  } else if (arg2 > arg1) {
+    largestNumber = arg2;
+  }
   return largestNumber;
 }
 
 /** Using the modulus operator determine if the argument is an even or odd number */
 
 function isEvenOrOdd(isEven) {
-  return; // return something here
+  // Method 1
+  if (isEven % 2 === 0) {
+    return true;
+  }
+  return false;
+
+  // Method 2
+  return isEven % 2 === 0;
 }
 
 /****
@@ -114,7 +112,30 @@ function isEvenOrOdd(isEven) {
  * 
  *  *****/
 
-function caseInSwitch(num) {}
+function caseInSwitch(num) {
+  switch (num) {
+    case 1:
+      return "ONE";
+    case 2:
+      return "TWO";
+    case 3:
+      return "THREE";
+    case 4:
+      return "FOUR";
+    case 5:
+      return "FIVE";
+    case 6:
+      return "SIX";
+    case 7:
+      return "SEVEN";
+    case 8:
+      return "EIGHT";
+    case 9:
+      return "NINE";
+    default:
+      return "PLEASE TRY AGAIN";
+  }
+}
 
 export {
   isEvenOrOdd,
