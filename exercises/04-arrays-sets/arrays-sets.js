@@ -5,7 +5,7 @@
 
 const accessingAnItem = () => {
   const cars = ["BMW", "Honda", "Civic"]; // Do not change this line
-  // Write code here
+  return cars[0];// Write code here
 };
 
 /**
@@ -17,10 +17,12 @@ const accessingAnItem = () => {
 const addToAnArray = () => {
   const languages = ["JavaScript"]; // Do not change this line
 
-  /* Add three more items to the "languages" array here */
+  languages.push("HTML","CSS","Python");/* Add three more items to the "languages" array here */
 
   return languages;
 };
+console.log(addToAnArray());
+
 
 /**
  * Combine an array by using the spread operator
@@ -30,7 +32,11 @@ const addToAnArray = () => {
  * @example combineArray(['Japan','China','India'], ['USA','UK']) // ['Japan','China','India','USA','UK']
  **/
 
-const combineArray = (array1, array2) => {};
+const combineArray = (array1, array2) => {
+  const combinedArray = [...array1,...array2];
+  return combinedArray;
+};
+console.log(combineArray(["Brazil","Mexico","Chile"],["Venezuela","Peru","Uruguay"]));
 
 /***
  * Create an array that contain two functions:
@@ -42,7 +48,13 @@ const combineArray = (array1, array2) => {};
  * @example createArrayOfFunctions()[1](10, 10) // 0;
  */
 
-const createArrayOfFunctions = () => {};
+const createArrayOfFunctions = () =>{
+  function Addfunction(m,n){
+  }
+  function SubstractFunction(x,y){
+  }
+  return createArrayOfFunctions[Addfunction(10+10)],[SubstractFunction(10-10)];
+};
 
 /**
  * Loop through the array using a for loop (or for ... of loop) and return the highest number
@@ -51,9 +63,29 @@ const createArrayOfFunctions = () => {};
  *
  * @example highestNumber([1, 10, 2, 3, 4]) // 10
  * @example highestNumber([-1, -5, -4]) // -1
- *
  **/
-const highestNumber = (numbers) => {};
+
+const highestNumber = (numbers) =>{
+  numbers=[1,10,2,4,6,7,8,9,-1,10,-20];
+  let numberList=numbers.length;
+  for(let i=0;i<numberList;i++){
+    console.log(i);
+  }
+  return numberList;
+  /*for(let numberListIndex=0;numberListIndex<numbers.indexOf();numberListIndex++){
+  for(let subOfNumberList=0;subOfNumberList<numbers.numberListIndex.length();subOfNumberList++){
+  if(numbers[numberListIndex][subOfNumberList]>numberList){
+    numberList[numberListIndex]=numbers[numberListIndex][subOfNumberList];
+    console.log(numberList);
+    }
+    else{
+      console.log("cannot obtain highest number");
+    } 
+  }
+}
+  return numberList;*/
+};
+console.log(highestNumber());
 
 /**
  * Given an array of objects, where each object has an ID,

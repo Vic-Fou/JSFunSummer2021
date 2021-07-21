@@ -7,7 +7,12 @@
  */
 
 const createDogObject = () => {
-  let mydoge = "blablabla";
+    const myDoge = {
+    "name": "",
+    "legs":"",
+    "tails":"",
+    "owners":"",
+  }
 };
 
 

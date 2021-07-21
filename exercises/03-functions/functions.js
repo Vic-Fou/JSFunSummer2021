@@ -7,11 +7,12 @@
  * It should accept a name and return "Hello ______!"
  * @example printGreeting("Tim"); // Hello Tim!
  */
-  const printGreeting = (name) => {
-    return console.log("Hello", name,"!");
-    
-  }
-  printGreeting("billy");
+  const printGreeting = name => {
+    console.log("Hello",name+''+"!");
+  };
+  printGreeting("Jimbo");
+
+   
 
 /**
  * Create a function named "timesFive". It should multiply a number by 5.
@@ -19,9 +20,8 @@
  * @example timesFive(2); // 10
  * @example timesFive(0); // 0
  */
-const timesFive = multiplier => {
-  const multiple = 
-};
+ const timesFive = (m) => m*5;
+ console.log(timesFive(2));
 /**
  * Create a function called "lowerCaseName".
  * If given a string, it should return the string lower cased.
@@ -31,7 +31,7 @@ const timesFive = multiplier => {
  * @example lowerCaseName(); // undefined (should not throw an error)
  * @example lowerCaseName(null); // undefined (should not throw an error)
  */
- const lowerCaseName = ()
+
 /**
  * Create a function called "isEvenOrOdd".
  * If given an even number, it should return "even".

@@ -114,10 +114,15 @@ function replaceLastName(fullName, newLastName) {
  */
 
 function capitalizeLastName(fullName) {
+  let firstName = "John ";
+  let lastName = "smith";
+  fullName = firstName + lastName;
   let capitalizeLastName = fullName.substring(0,5) + fullName[5].toUpperCase() + fullName.substring(6);
   return capitalizeLastName;
-  console.llog("justice");
 }
+console.log(capitalizeLastName());
+
+
 
 /**
  * Ignore me. This is for the tests
