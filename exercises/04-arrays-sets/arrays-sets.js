@@ -138,7 +138,7 @@ const findAndAbort = (arr, id) => {
   for (let i=0; i< arr.length; i++){
     let person=arr[i];
     if(person.id === id){
-      
+      console.log(foundItem);
     }
   }
   /*break stops the loop*/
