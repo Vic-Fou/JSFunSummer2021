@@ -49,12 +49,22 @@ console.log(combineArray(["Brazil","Mexico","Chile"],["Venezuela","Peru","Urugua
  */
 
 const createArrayOfFunctions = () =>{
+  let functionsArray= []; 
+  /*anonymous functions ->*/
   function Addfunction(m,n){
+    return m+n;
   }
   function SubstractFunction(x,y){
+    return x-y;
   }
-  return createArrayOfFunctions[Addfunction(10+10)],[SubstractFunction(10-10)];
+  functionsArray.push(Addfunction);
+  functionsArray.push(SubstractFunction);
+  /* review array.push*/
+  console.log(functionsArray[0](10,10));
+  console.log(functionsArray[1](19,18));
+  return functionsArray;
 };
+console.log(createArrayOfFunctions());
 
 /**
  * Loop through the array using a for loop (or for ... of loop) and return the highest number
@@ -123,7 +133,17 @@ console.log(highestNumber());
  * Please note, the loop never iterates over the last item, because we found our object. There is no need to continue looping.
  */
 
-const findAndAbort = (arr, id) => {};
+const findAndAbort = (arr, id) => {
+  let foundItem;
+  for (let i=0; i< arr.length; i++){
+    let person=arr[i];
+    if(person.id === id){
+      
+    }
+  }
+  /*break stops the loop*/
+  return foundItem;
+};
 
 /**
  * Check to see if a string is a palindrome.
@@ -135,8 +155,16 @@ const findAndAbort = (arr, id) => {};
  * @example isPalindrome("nope"); // false
  */
 
-const isPalindrome = (str) => {};
-
+const isPalindrome = (str) => {;
+let letters= str.split("");
+let reverseStr="";
+console.log(letters);
+for (let i=0; i< letters.length;i++){
+  console.log(letters[i]);
+  reverseStr= letters[i] + reverseStr;
+}
+};
+console.log(isPalindrome("racecar"));
 /**
  * Use sets to remove duplicate elements from an array
  * @return {array} of numbers
