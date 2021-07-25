@@ -8,11 +8,12 @@
 
 const createDogObject = () => {
     const myDoge = {
-    "name": "",
-    "legs":"",
-    "tails":"",
-    "owners":"",
-  }
+    "name": "Sparky",
+    "legs":"3",
+    "tails":"1",
+    "owners":["Stephen","Marcus","Sergei"]
+  };
+  return myDoge;
 };
 
 
@@ -49,7 +50,20 @@ const createGraduateObject = (
   skills,
   githubLink,
   linkedInLink
-) => {};
+) => { 
+  const gradObject={
+    name:name,
+    graduationYear:graduationYear,
+    skills: skills,
+    links: {
+      github:githubLink,
+      linkedIn:linkedInLink
+    }
+    //property keys will not be remembered by the entire function, so set the property value as the parameter in your new obj
+  };
+  return gradObject;
+ 
+};
 
 /**
  * Return the value for hat inside of the clothes object
@@ -64,7 +78,7 @@ const accessAnItemObject = () => {
     shirt: "jersey",
     shoes: "cleats",
   };
-  // Write code here
+  return clothes['hat'];// Write code here
 };
 
 /**
@@ -87,6 +101,10 @@ const updateStudentObject = () => {
     skills: [],
   };
   // Write code here
+  student["firstName"]='Victorious';
+  student["lastName"]='Foulks';
+  student["skills"]=["JavaScript","CSS","HTML"];
+  return student;
 };
 
 /**
@@ -103,7 +121,8 @@ const returnObjectValues = () => {
     owner: "Stacy",
     name: "Rocket",
   };
-  // Add code here
+  let dogSets = Object.values(dog);// Add code here
+  return dogSets;
   // HINT: you need to return an array
 };
 
@@ -118,7 +137,20 @@ const returnObjectValues = () => {
  * combineObject(obj1, obj2); // { firstName: "Clark", lastName: "Kent" }
  */
 
-const combineObject = (obj1, obj2) => {};
+const combineObject = (obj1, obj2) => {
+  const object1= {
+    firstName:'Clark'
+  };
+  const object2={
+    lastName:'Kent'
+  };
+  const bothObjects = {
+    firstName:object1.firstName,//...object1,
+    lastName:object2.lastName//...object2,
+
+  };
+  return bothObjects;
+};
 
 export {
   createDogObject,
