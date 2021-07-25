@@ -5,7 +5,10 @@
 
 const accessingAnItem = () => {
   const cars = ["BMW", "Honda", "Civic"]; // Do not change this line
+ main
   return cars[0];// Write code here
+
+  //  main
 };
 
 /**
@@ -17,12 +20,19 @@ const accessingAnItem = () => {
 const addToAnArray = () => {
   const languages = ["JavaScript"]; // Do not change this line
 
+ main
   languages.push("HTML","CSS","Python");/* Add three more items to the "languages" array here */
 
   return languages;
 };
 console.log(addToAnArray());
 
+
+  /* Add three more items to the "languages" array here */
+
+  return languages;
+};
+ main
 
 /**
  * Combine an array by using the spread operator
@@ -32,11 +42,15 @@ console.log(addToAnArray());
  * @example combineArray(['Japan','China','India'], ['USA','UK']) // ['Japan','China','India','USA','UK']
  **/
 
+ main
 const combineArray = (array1, array2) => {
   const combinedArray = [...array1,...array2];
   return combinedArray;
 };
 console.log(combineArray(["Brazil","Mexico","Chile"],["Venezuela","Peru","Uruguay"]));
+
+const combineArray = (array1, array2) => {};
+ main
 
 /***
  * Create an array that contain two functions:
@@ -48,6 +62,7 @@ console.log(combineArray(["Brazil","Mexico","Chile"],["Venezuela","Peru","Urugua
  * @example createArrayOfFunctions()[1](10, 10) // 0;
  */
 
+ main
 const createArrayOfFunctions = () =>{
   let functionsArray= []; 
   /*anonymous functions ->*/
@@ -66,6 +81,9 @@ const createArrayOfFunctions = () =>{
 };
 console.log(createArrayOfFunctions());
 
+const createArrayOfFunctions = () => {};
+ main
+
 /**
  * Loop through the array using a for loop (or for ... of loop) and return the highest number
  * @param  { array }
@@ -73,6 +91,7 @@ console.log(createArrayOfFunctions());
  *
  * @example highestNumber([1, 10, 2, 3, 4]) // 10
  * @example highestNumber([-1, -5, -4]) // -1
+  main
  **/
 
 const highestNumber = (numbers) =>{
@@ -96,6 +115,11 @@ const highestNumber = (numbers) =>{
   return numberList;*/
 };
 console.log(highestNumber());
+
+ *
+ **/
+const highestNumber = (numbers) => {};
+ main
 
 /**
  * Given an array of objects, where each object has an ID,
@@ -133,6 +157,7 @@ console.log(highestNumber());
  * Please note, the loop never iterates over the last item, because we found our object. There is no need to continue looping.
  */
 
+  main
 const findAndAbort = (arr, id) => {
   let foundItem;
   for (let i=0; i< arr.length; i++){
@@ -145,6 +170,9 @@ const findAndAbort = (arr, id) => {
   return foundItem;
 };
 
+const findAndAbort = (arr, id) => {};
+ main
+
 /**
  * Check to see if a string is a palindrome.
  * A palindrome is a word, phrase, or sequence that reads the same backward as forward, e.g., madam or racecar.
@@ -155,6 +183,7 @@ const findAndAbort = (arr, id) => {
  * @example isPalindrome("nope"); // false
  */
 
+main
 const isPalindrome = (str) => {;
 let letters= str.split("");
 let reverseStr="";
@@ -165,6 +194,10 @@ for (let i=0; i< letters.length;i++){
 }
 };
 console.log(isPalindrome("racecar"));
+
+const isPalindrome = (str) => {};
+
+ main
 /**
  * Use sets to remove duplicate elements from an array
  * @return {array} of numbers
