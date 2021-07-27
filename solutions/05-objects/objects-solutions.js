@@ -6,20 +6,14 @@
  * @return {object}
  */
 
-<<<<<<< HEAD
 const createDogObject = () => {
-    const myDoge = {
-    "name": "Sparky",
-    "legs":"3",
-    "tails":"1",
-    "owners":["Stephen","Marcus","Sergei"]
+  return {
+    name: "Sparky",
+    legs: 8,
+    tails: 2,
+    owners: ["Tim Burton"],
   };
-  return myDoge;
 };
-
-=======
-const createDogObject = () => {};
->>>>>>> 4a14425e3b01fc5ab276d18435e3e7bcc9c82a6a
 
 /**
  *  CreateGraduateObject function takes in several arguments and combines them together in one object.
@@ -54,24 +48,14 @@ const createGraduateObject = (
   skills,
   githubLink,
   linkedInLink
-<<<<<<< HEAD
-) => { 
-  const gradObject={
-    name:name,
-    graduationYear:graduationYear,
-    skills: skills,
-    links: {
-      github:githubLink,
-      linkedIn:linkedInLink
-    }
-    //property keys will not be remembered by the entire function, so set the property value as the parameter in your new obj
+) => {
+  return {
+    name,
+    graduationYear,
+    skills,
+    links: { github: githubLink, linkedIn: linkedInLink },
   };
-  return gradObject;
- 
 };
-=======
-) => {};
->>>>>>> 4a14425e3b01fc5ab276d18435e3e7bcc9c82a6a
 
 /**
  * Return the value for hat inside of the clothes object
@@ -86,11 +70,8 @@ const accessAnItemObject = () => {
     shirt: "jersey",
     shoes: "cleats",
   };
-<<<<<<< HEAD
-  return clothes['hat'];// Write code here
-=======
-  // Write code here
->>>>>>> 4a14425e3b01fc5ab276d18435e3e7bcc9c82a6a
+  // Only change this return statement
+  return clothes.hat;
 };
 
 /**
@@ -113,13 +94,10 @@ const updateStudentObject = () => {
     skills: [],
   };
   // Write code here
-<<<<<<< HEAD
-  student["firstName"]='Victorious';
-  student["lastName"]='Foulks';
-  student["skills"]=["JavaScript","CSS","HTML"];
+  student.firstName = "Jamal";
+  student.lastName = "Taylor";
+  student.skills = ["JavaScript", "Teaching", "Being a permanent student"];
   return student;
-=======
->>>>>>> 4a14425e3b01fc5ab276d18435e3e7bcc9c82a6a
 };
 
 /**
@@ -136,13 +114,9 @@ const returnObjectValues = () => {
     owner: "Stacy",
     name: "Rocket",
   };
-<<<<<<< HEAD
-  let dogSets = Object.values(dog);// Add code here
-  return dogSets;
-=======
   // Add code here
->>>>>>> 4a14425e3b01fc5ab276d18435e3e7bcc9c82a6a
   // HINT: you need to return an array
+  return Object.values(dog);
 };
 
 /**
@@ -156,24 +130,9 @@ const returnObjectValues = () => {
  * combineObject(obj1, obj2); // { firstName: "Clark", lastName: "Kent" }
  */
 
-<<<<<<< HEAD
 const combineObject = (obj1, obj2) => {
-  const object1= {
-    firstName:'Clark'
-  };
-  const object2={
-    lastName:'Kent'
-  };
-  const bothObjects = {
-    firstName:object1.firstName,//...object1,
-    lastName:object2.lastName//...object2,
-
-  };
-  return bothObjects;
+  return { ...obj1, ...obj2 };
 };
-=======
-const combineObject = (obj1, obj2) => {};
->>>>>>> 4a14425e3b01fc5ab276d18435e3e7bcc9c82a6a
 
 export {
   createDogObject,

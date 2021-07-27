@@ -5,7 +5,11 @@
 
 const accessingAnItem = () => {
   const cars = ["BMW", "Honda", "Civic"]; // Do not change this line
+<<<<<<< HEAD
   return cars[0];// Write code here
+=======
+  // Write code here
+>>>>>>> 4a14425e3b01fc5ab276d18435e3e7bcc9c82a6a
 };
 
 /**
@@ -17,12 +21,19 @@ const accessingAnItem = () => {
 const addToAnArray = () => {
   const languages = ["JavaScript"]; // Do not change this line
 
+<<<<<<< HEAD
   languages.push("HTML","CSS","Python");/* Add three more items to the "languages" array here */
 
   return languages;
 };
 console.log(addToAnArray());
 
+=======
+  /* Add three more items to the "languages" array here */
+
+  return languages;
+};
+>>>>>>> 4a14425e3b01fc5ab276d18435e3e7bcc9c82a6a
 
 /**
  * Combine an array by using the spread operator
@@ -32,11 +43,15 @@ console.log(addToAnArray());
  * @example combineArray(['Japan','China','India'], ['USA','UK']) // ['Japan','China','India','USA','UK']
  **/
 
+<<<<<<< HEAD
 const combineArray = (array1, array2) => {
   const combinedArray = [...array1,...array2];
   return combinedArray;
 };
 console.log(combineArray(["Brazil","Mexico","Chile"],["Venezuela","Peru","Uruguay"]));
+=======
+const combineArray = (array1, array2) => {};
+>>>>>>> 4a14425e3b01fc5ab276d18435e3e7bcc9c82a6a
 
 /***
  * Create an array that contain two functions:
@@ -48,6 +63,7 @@ console.log(combineArray(["Brazil","Mexico","Chile"],["Venezuela","Peru","Urugua
  * @example createArrayOfFunctions()[1](10, 10) // 0;
  */
 
+<<<<<<< HEAD
 const createArrayOfFunctions = () =>{
   let functionsArray= []; 
   /*anonymous functions ->*/
@@ -65,6 +81,9 @@ const createArrayOfFunctions = () =>{
   return functionsArray;
 };
 console.log(createArrayOfFunctions());
+=======
+const createArrayOfFunctions = () => {};
+>>>>>>> 4a14425e3b01fc5ab276d18435e3e7bcc9c82a6a
 
 /**
  * Loop through the array using a for loop (or for ... of loop) and return the highest number
@@ -73,6 +92,7 @@ console.log(createArrayOfFunctions());
  *
  * @example highestNumber([1, 10, 2, 3, 4]) // 10
  * @example highestNumber([-1, -5, -4]) // -1
+<<<<<<< HEAD
  **/
 
 const highestNumber = (numbers) =>{
@@ -96,6 +116,11 @@ const highestNumber = (numbers) =>{
   return numberList;*/
 };
 console.log(highestNumber());
+=======
+ *
+ **/
+const highestNumber = (numbers) => {};
+>>>>>>> 4a14425e3b01fc5ab276d18435e3e7bcc9c82a6a
 
 /**
  * Given an array of objects, where each object has an ID,
@@ -133,6 +158,7 @@ console.log(highestNumber());
  * Please note, the loop never iterates over the last item, because we found our object. There is no need to continue looping.
  */
 
+<<<<<<< HEAD
 const findAndAbort = (arr, id) => {
   let foundItem;
   for (let i=0; i< arr.length; i++){
@@ -144,6 +170,9 @@ const findAndAbort = (arr, id) => {
   /*break stops the loop*/
   return foundItem;
 };
+=======
+const findAndAbort = (arr, id) => {};
+>>>>>>> 4a14425e3b01fc5ab276d18435e3e7bcc9c82a6a
 
 /**
  * Check to see if a string is a palindrome.
@@ -155,6 +184,7 @@ const findAndAbort = (arr, id) => {
  * @example isPalindrome("nope"); // false
  */
 
+<<<<<<< HEAD
 const isPalindrome = (str) => {;
 let letters= str.split("");
 let reverseStr="";
@@ -165,6 +195,10 @@ for (let i=0; i< letters.length;i++){
 }
 };
 console.log(isPalindrome("racecar"));
+=======
+const isPalindrome = (str) => {};
+
+>>>>>>> 4a14425e3b01fc5ab276d18435e3e7bcc9c82a6a
 /**
  * Use sets to remove duplicate elements from an array
  * @return {array} of numbers

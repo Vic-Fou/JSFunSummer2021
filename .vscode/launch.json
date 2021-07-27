@@ -82,5 +82,34 @@
       ],
       "internalConsoleOptions": "openOnSessionStart"
     },
+<<<<<<< HEAD
+=======
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "06-cloning-objects",
+      "program": "${workspaceFolder}/node_modules/mocha/bin/_mocha",
+      "args": [
+        "--timeout",
+        "999999",
+        "--colors",
+        "${workspaceFolder}/test/06-cloning-objects/cloning-objects.spec.js"
+      ],
+      "internalConsoleOptions": "openOnSessionStart"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "07-closures",
+      "program": "${workspaceFolder}/node_modules/mocha/bin/_mocha",
+      "args": [
+        "--timeout",
+        "999999",
+        "--colors",
+        "${workspaceFolder}/test/07-closures/closures.spec.js"
+      ],
+      "internalConsoleOptions": "openOnSessionStart"
+    },
+>>>>>>> 4a14425e3b01fc5ab276d18435e3e7bcc9c82a6a
   ]
 }
