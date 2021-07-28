@@ -6,10 +6,17 @@
 const accessingAnItem = () => {
   const cars = ["BMW", "Honda", "Civic"]; // Do not change this line
 <<<<<<< HEAD
+<<<<<<< HEAD
   return cars[0];// Write code here
 =======
   // Write code here
 >>>>>>> 4a14425e3b01fc5ab276d18435e3e7bcc9c82a6a
+=======
+ main
+  return cars[0];// Write code here
+
+  //  main
+>>>>>>> c72d2c8d74ac25ad4531b4d9b047305caebc71ec
 };
 
 /**
@@ -22,18 +29,30 @@ const addToAnArray = () => {
   const languages = ["JavaScript"]; // Do not change this line
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+ main
+>>>>>>> c72d2c8d74ac25ad4531b4d9b047305caebc71ec
   languages.push("HTML","CSS","Python");/* Add three more items to the "languages" array here */
 
   return languages;
 };
 console.log(addToAnArray());
 
+<<<<<<< HEAD
 =======
+=======
+
+>>>>>>> c72d2c8d74ac25ad4531b4d9b047305caebc71ec
   /* Add three more items to the "languages" array here */
 
   return languages;
 };
+<<<<<<< HEAD
 >>>>>>> 4a14425e3b01fc5ab276d18435e3e7bcc9c82a6a
+=======
+ main
+>>>>>>> c72d2c8d74ac25ad4531b4d9b047305caebc71ec
 
 /**
  * Combine an array by using the spread operator
@@ -44,14 +63,24 @@ console.log(addToAnArray());
  **/
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+ main
+>>>>>>> c72d2c8d74ac25ad4531b4d9b047305caebc71ec
 const combineArray = (array1, array2) => {
   const combinedArray = [...array1,...array2];
   return combinedArray;
 };
 console.log(combineArray(["Brazil","Mexico","Chile"],["Venezuela","Peru","Uruguay"]));
+<<<<<<< HEAD
 =======
 const combineArray = (array1, array2) => {};
 >>>>>>> 4a14425e3b01fc5ab276d18435e3e7bcc9c82a6a
+=======
+
+const combineArray = (array1, array2) => {};
+ main
+>>>>>>> c72d2c8d74ac25ad4531b4d9b047305caebc71ec
 
 /***
  * Create an array that contain two functions:
@@ -64,6 +93,10 @@ const combineArray = (array1, array2) => {};
  */
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+ main
+>>>>>>> c72d2c8d74ac25ad4531b4d9b047305caebc71ec
 const createArrayOfFunctions = () =>{
   let functionsArray= []; 
   /*anonymous functions ->*/
@@ -81,9 +114,15 @@ const createArrayOfFunctions = () =>{
   return functionsArray;
 };
 console.log(createArrayOfFunctions());
+<<<<<<< HEAD
 =======
 const createArrayOfFunctions = () => {};
 >>>>>>> 4a14425e3b01fc5ab276d18435e3e7bcc9c82a6a
+=======
+
+const createArrayOfFunctions = () => {};
+ main
+>>>>>>> c72d2c8d74ac25ad4531b4d9b047305caebc71ec
 
 /**
  * Loop through the array using a for loop (or for ... of loop) and return the highest number
@@ -93,6 +132,10 @@ const createArrayOfFunctions = () => {};
  * @example highestNumber([1, 10, 2, 3, 4]) // 10
  * @example highestNumber([-1, -5, -4]) // -1
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+  main
+>>>>>>> c72d2c8d74ac25ad4531b4d9b047305caebc71ec
  **/
 
 const highestNumber = (numbers) =>{
@@ -116,11 +159,19 @@ const highestNumber = (numbers) =>{
   return numberList;*/
 };
 console.log(highestNumber());
+<<<<<<< HEAD
 =======
  *
  **/
 const highestNumber = (numbers) => {};
 >>>>>>> 4a14425e3b01fc5ab276d18435e3e7bcc9c82a6a
+=======
+
+ *
+ **/
+const highestNumber = (numbers) => {};
+ main
+>>>>>>> c72d2c8d74ac25ad4531b4d9b047305caebc71ec
 
 /**
  * Given an array of objects, where each object has an ID,
@@ -159,6 +210,10 @@ const highestNumber = (numbers) => {};
  */
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+  main
+>>>>>>> c72d2c8d74ac25ad4531b4d9b047305caebc71ec
 const findAndAbort = (arr, id) => {
   let foundItem;
   for (let i=0; i< arr.length; i++){
@@ -170,9 +225,15 @@ const findAndAbort = (arr, id) => {
   /*break stops the loop*/
   return foundItem;
 };
+<<<<<<< HEAD
 =======
 const findAndAbort = (arr, id) => {};
 >>>>>>> 4a14425e3b01fc5ab276d18435e3e7bcc9c82a6a
+=======
+
+const findAndAbort = (arr, id) => {};
+ main
+>>>>>>> c72d2c8d74ac25ad4531b4d9b047305caebc71ec
 
 /**
  * Check to see if a string is a palindrome.
@@ -185,6 +246,10 @@ const findAndAbort = (arr, id) => {};
  */
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+main
+>>>>>>> c72d2c8d74ac25ad4531b4d9b047305caebc71ec
 const isPalindrome = (str) => {;
 let letters= str.split("");
 let reverseStr="";
@@ -195,10 +260,17 @@ for (let i=0; i< letters.length;i++){
 }
 };
 console.log(isPalindrome("racecar"));
+<<<<<<< HEAD
 =======
 const isPalindrome = (str) => {};
 
 >>>>>>> 4a14425e3b01fc5ab276d18435e3e7bcc9c82a6a
+=======
+
+const isPalindrome = (str) => {};
+
+ main
+>>>>>>> c72d2c8d74ac25ad4531b4d9b047305caebc71ec
 /**
  * Use sets to remove duplicate elements from an array
  * @return {array} of numbers

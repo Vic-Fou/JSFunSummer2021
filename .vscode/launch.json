@@ -83,7 +83,12 @@
       "internalConsoleOptions": "openOnSessionStart"
     },
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+ main
+
+>>>>>>> c72d2c8d74ac25ad4531b4d9b047305caebc71ec
     {
       "type": "node",
       "request": "launch",
@@ -97,6 +102,7 @@
       ],
       "internalConsoleOptions": "openOnSessionStart"
     },
+<<<<<<< HEAD
     {
       "type": "node",
       "request": "launch",
@@ -127,5 +133,8 @@
       "internalConsoleOptions": "openOnSessionStart"
     },
 >>>>>>> 1c65dbe3f8b7a3e23a27333d57d4e604e42b0d2e
+=======
+ main
+>>>>>>> c72d2c8d74ac25ad4531b4d9b047305caebc71ec
   ]
 }

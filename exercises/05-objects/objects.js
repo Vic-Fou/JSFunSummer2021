@@ -7,6 +7,10 @@
  */
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+  main
+>>>>>>> c72d2c8d74ac25ad4531b4d9b047305caebc71ec
 const createDogObject = () => {
     const myDoge = {
     "name": "Sparky",
@@ -17,9 +21,15 @@ const createDogObject = () => {
   return myDoge;
 };
 
+<<<<<<< HEAD
 =======
 const createDogObject = () => {};
 >>>>>>> 4a14425e3b01fc5ab276d18435e3e7bcc9c82a6a
+=======
+
+const createDogObject = () => {};
+ main
+>>>>>>> c72d2c8d74ac25ad4531b4d9b047305caebc71ec
 
 /**
  *  CreateGraduateObject function takes in several arguments and combines them together in one object.
@@ -55,6 +65,10 @@ const createGraduateObject = (
   githubLink,
   linkedInLink
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+  main
+>>>>>>> c72d2c8d74ac25ad4531b4d9b047305caebc71ec
 ) => { 
   const gradObject={
     name:name,
@@ -69,9 +83,15 @@ const createGraduateObject = (
   return gradObject;
  
 };
+<<<<<<< HEAD
 =======
 ) => {};
 >>>>>>> 4a14425e3b01fc5ab276d18435e3e7bcc9c82a6a
+=======
+
+) => {};
+ main
+>>>>>>> c72d2c8d74ac25ad4531b4d9b047305caebc71ec
 
 /**
  * Return the value for hat inside of the clothes object
@@ -87,10 +107,18 @@ const accessAnItemObject = () => {
     shoes: "cleats",
   };
 <<<<<<< HEAD
+<<<<<<< HEAD
   return clothes['hat'];// Write code here
 =======
   // Write code here
 >>>>>>> 4a14425e3b01fc5ab276d18435e3e7bcc9c82a6a
+=======
+  main
+  return clothes['hat'];// Write code here
+
+  // Write code here
+ main
+>>>>>>> c72d2c8d74ac25ad4531b4d9b047305caebc71ec
 };
 
 /**
@@ -114,12 +142,21 @@ const updateStudentObject = () => {
   };
   // Write code here
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+  main
+>>>>>>> c72d2c8d74ac25ad4531b4d9b047305caebc71ec
   student["firstName"]='Victorious';
   student["lastName"]='Foulks';
   student["skills"]=["JavaScript","CSS","HTML"];
   return student;
+<<<<<<< HEAD
 =======
 >>>>>>> 4a14425e3b01fc5ab276d18435e3e7bcc9c82a6a
+=======
+
+ main
+>>>>>>> c72d2c8d74ac25ad4531b4d9b047305caebc71ec
 };
 
 /**
@@ -137,11 +174,20 @@ const returnObjectValues = () => {
     name: "Rocket",
   };
 <<<<<<< HEAD
+<<<<<<< HEAD
   let dogSets = Object.values(dog);// Add code here
   return dogSets;
 =======
   // Add code here
 >>>>>>> 4a14425e3b01fc5ab276d18435e3e7bcc9c82a6a
+=======
+  main
+  let dogSets = Object.values(dog);// Add code here
+  return dogSets;
+
+  // Add code here
+ main
+>>>>>>> c72d2c8d74ac25ad4531b4d9b047305caebc71ec
   // HINT: you need to return an array
 };
 
@@ -157,6 +203,10 @@ const returnObjectValues = () => {
  */
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+  main
+>>>>>>> c72d2c8d74ac25ad4531b4d9b047305caebc71ec
 const combineObject = (obj1, obj2) => {
   const object1= {
     firstName:'Clark'
@@ -171,9 +221,15 @@ const combineObject = (obj1, obj2) => {
   };
   return bothObjects;
 };
+<<<<<<< HEAD
 =======
 const combineObject = (obj1, obj2) => {};
 >>>>>>> 4a14425e3b01fc5ab276d18435e3e7bcc9c82a6a
+=======
+
+const combineObject = (obj1, obj2) => {};
+ main
+>>>>>>> c72d2c8d74ac25ad4531b4d9b047305caebc71ec
 
 export {
   createDogObject,
