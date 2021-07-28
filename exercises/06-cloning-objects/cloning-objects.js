@@ -55,6 +55,7 @@ const addToCart = (shoppingCart, newItem) => {
     return JSON.parse(JSON.stringify(shoppingCart,newItem));
     //shoppingCart[0].price= 100;
     //newItem.price= 22;
+    
 };
 addToCart();
 
