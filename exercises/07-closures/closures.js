@@ -36,13 +36,14 @@ greeter();
  * @returns {Object} an object that has two methods. See comments below.
  */
 const calculator = () => {
-  const num1= ()=>{
-    let sum = 
-  }
+  
   /**
    * Create a private variable called "sum"
    * @var {number}
    */
+  const num1= ()=>{
+    let sum
+  
   /**
    * Return an object that has two methods:
    *
@@ -54,6 +55,15 @@ const calculator = () => {
    * that should return the value of "sum" above.
    * @returns {number} the value of sum
    */
+  const calcObj={
+     first:(number)=>{
+      return sum+number;
+     },
+     second:()=>{
+     return sum;
+    } 
+   }
+   return 
 };
 
 /**

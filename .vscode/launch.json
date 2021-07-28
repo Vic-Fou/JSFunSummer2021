@@ -110,6 +110,22 @@
       ],
       "internalConsoleOptions": "openOnSessionStart"
     },
+<<<<<<< HEAD
 >>>>>>> 4a14425e3b01fc5ab276d18435e3e7bcc9c82a6a
+=======
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "08-currying",
+      "program": "${workspaceFolder}/node_modules/mocha/bin/_mocha",
+      "args": [
+        "--timeout",
+        "999999",
+        "--colors",
+        "${workspaceFolder}/test/08-currying/currying.spec.js"
+      ],
+      "internalConsoleOptions": "openOnSessionStart"
+    },
+>>>>>>> 1c65dbe3f8b7a3e23a27333d57d4e604e42b0d2e
   ]
 }
