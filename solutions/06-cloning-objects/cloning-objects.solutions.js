@@ -17,16 +17,10 @@
  * user.email = "icanhascheeseburger@yahoo.com"; // This should not change newUser
  */
 const changeEmail = (user, newEmail) => {
-    /*//you do not need to write out this, it will be called by the 
-    useruser={
-        id:5,
-        username:"lolcatz1",
-        email:"CareBear3000@gmail.com"
-    };*/
-    const newUserCatalog={...user/*numberOfClients:1*/};
-    newUserCatalog.email=newEmail;
-    console.log(newUserCatalog);
-    return newUserCatalog;
+  return {
+    ...user,
+    email: newEmail,
+  };
 };
 
 /**
@@ -49,24 +43,19 @@ const changeEmail = (user, newEmail) => {
  * newItem.price = 10; // This should not change newItem
  */
 const addToCart = (shoppingCart, newItem) => {
-    let cart= [
-        ...shoppingCart,//array has spread operator
-        newItem]
-    };
-    for(let i = 0; i<cart.length;i++){
-        cart[i]{ ...cart[i] };/*loops is the level 2 spread that is */ 
-    };
-    return cart;
+  // Solution 1
+  let cart = shoppingCart.concat(newItem);
+  for (let i = 0; i < cart.length; i++) {
+    cart[i] = { ...cart[i] };
+  }
+  return cart;
 
-    console.log(cart);
-    /*shoppingCart=[{name:"TV - 20ft",price:1000000}];
-    newItem={name:"Popcorn",price:5};
-    const newShoppingCart=shoppingCart.push(newItem);//[shoppingCart,newItem];
-    console.log(newShoppingCart);
-    return JSON.parse(JSON.stringify(shoppingCart,newItem));
-    //shoppingCart[0].price= 100;
-    //newItem.price= 22;*/
-    
+  // Solution 2
+  let cart = [];
+  for (let item of [...shoppingCart, newItem]) {
+    cart.push({ ...item });
+  }
+  return cart;
 };
 
 export { changeEmail, addToCart };

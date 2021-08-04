@@ -14,12 +14,12 @@
  * @param {number} b
  */
 const multiplier = (a, b) => {
-    if (a && b) {
-        return a*b;
-    }
-    else{
-        return (b)=>a*b;
-    }
+  if (a && b) {
+    // or if (a !== undefined && b !== undefined) {
+    return a * b;
+  } else {
+    return (b) => a * b;
+  }
 };
-console.log(multiplier(1)(2));
+
 export { multiplier };

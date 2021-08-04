@@ -132,9 +132,25 @@
       ],
       "internalConsoleOptions": "openOnSessionStart"
     },
+<<<<<<< HEAD
 >>>>>>> 1c65dbe3f8b7a3e23a27333d57d4e604e42b0d2e
 =======
  main
 >>>>>>> c72d2c8d74ac25ad4531b4d9b047305caebc71ec
+=======
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "09-callbacks",
+      "program": "${workspaceFolder}/node_modules/mocha/bin/_mocha",
+      "args": [
+        "--timeout",
+        "999999",
+        "--colors",
+        "${workspaceFolder}/test/09-callbacks/callbacks.spec.js"
+      ],
+      "internalConsoleOptions": "openOnSessionStart"
+    },
+>>>>>>> 0204567ecdf89bc0e14f7a09f8f669afde2c26e6
   ]
 }
