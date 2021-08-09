@@ -151,6 +151,35 @@
       ],
       "internalConsoleOptions": "openOnSessionStart"
     },
+<<<<<<< HEAD
 >>>>>>> 0204567ecdf89bc0e14f7a09f8f669afde2c26e6
+=======
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "10-for-each",
+      "program": "${workspaceFolder}/node_modules/mocha/bin/_mocha",
+      "args": [
+        "--timeout",
+        "999999",
+        "--colors",
+        "${workspaceFolder}/test/10-for-each/for-each.spec.js"
+      ],
+      "internalConsoleOptions": "openOnSessionStart"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "11-map",
+      "program": "${workspaceFolder}/node_modules/mocha/bin/_mocha",
+      "args": [
+        "--timeout",
+        "999999",
+        "--colors",
+        "${workspaceFolder}/test/11-map/map.spec.js"
+      ],
+      "internalConsoleOptions": "openOnSessionStart"
+    },
+>>>>>>> 1ab7711e788293a3b9c5241c881a048e0234b94a
   ]
 }
