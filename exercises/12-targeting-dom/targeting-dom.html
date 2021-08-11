@@ -94,11 +94,14 @@
         You <strong>should</strong> modify the HTML in this
         <em>&lt;section&gt;</em>.
       </div>
-      <p><a href="#">Ignore me</a> but <a href="#">target me</a>.</p>
+      <p><a href="#">Ignore me</a> but <a href="#" data-mygroup>target me</a>.</p>
       <button class="btn btn-secondary" type="button">Ignore Me</button>
-      <button class="btn btn-success" type="button">Target Me</button>
+      <button class="btn btn-success" data-mygroup type="button">Target Me</button>
       <button class="btn btn-secondary" type="button">Ignore Me</button>
       <button class="btn btn-secondary" type="button">Ignore Me</button>
     </section>
   </body>
 </html>
+<!--Why does document.querySelectorAll("#myRow div")work,
+but not document.querySelectorAll(".row bg-success text-white div"), or 
+just trying to get the cells with decesdant then there class -->

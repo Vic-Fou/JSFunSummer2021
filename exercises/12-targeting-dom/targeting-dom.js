@@ -12,4 +12,21 @@
  */
 (function () {
   // Put your answers in here
+  //const openli=document.querySelector("li");
+  console.log(document.querySelector("li"));
+
+  //const liWithId=document.querySelector("#myid");
+  console.log(document.querySelector("#myid"));
+
+  console.log(document.querySelector("#myid"));
+  const liByClass=document.querySelectorAll(".bg-warning");
+
+  console.log(Object.values(liByClass));
+  const linkAndButton=document.querySelectorAll('[data-mygroup]');
+  console.log(Object.values(linkAndButton));
+
+  const nestedDiv=document.querySelectorAll("#myRow div");
+  console.log(Object.values(nestedDiv));
 })();
+
+/* Won't Let me Define document, to use doucment.querySelector()*/
