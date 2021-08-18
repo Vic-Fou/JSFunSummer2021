@@ -23,3 +23,4 @@ const multiplier = (a, b) => {
 };
 console.log(multiplier(1)(2));
 export { multiplier };
+document.getElementsByClassName("btn btn-outline secondary")

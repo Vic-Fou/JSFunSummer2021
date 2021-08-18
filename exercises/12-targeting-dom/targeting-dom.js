@@ -16,16 +16,16 @@
   console.log(document.querySelector("li"));
 
   //const liWithId=document.querySelector("#myid");
-  console.log(document.querySelector("#myid"));
+  //console.log(document.querySelector("#myid"));
 
-  console.log(document.querySelector("#myid"));
+  console.log(document.querySelector("#myId"));
   const liByClass=document.querySelectorAll(".bg-warning");
 
   console.log(Object.values(liByClass));
   const linkAndButton=document.querySelectorAll('[data-mygroup]');
   console.log(Object.values(linkAndButton));
 
-  const nestedDiv=document.querySelectorAll("#myRow div");
+  const nestedDiv=document.querySelectorAll("#myRow .col.col-xs.border");
   console.log(Object.values(nestedDiv));
 })();
 
